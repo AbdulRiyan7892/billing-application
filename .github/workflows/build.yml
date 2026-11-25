@@ -29,6 +29,7 @@ jobs:
         run: npm run desktop:build:mac
         env:
           CSC_IDENTITY_AUTO_DISCOVERY: false
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Upload macOS DMG Installer
         uses: actions/upload-artifact@v4
@@ -57,6 +58,8 @@ jobs:
 
       - name: Build Windows Installer
         run: npm run desktop:build:win
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Upload Windows Installer
         uses: actions/upload-artifact@v4
