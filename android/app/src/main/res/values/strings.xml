@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Arif Veneer and Woods</string>
+    <string name="title_activity_main">Arif Veneer and Woods</string>
+    <string name="package_name">com.arifveneer.billing</string>
+    <string name="custom_url_scheme">com.arifveneer.billing</string>
+</resources>

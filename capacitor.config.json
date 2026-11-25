@@ -1,0 +1,13 @@
+{
+  "appId": "com.arifveneer.billing",
+  "appName": "Arif Veneer and Woods",
+  "webDir": "dist",
+  "server": {
+    "cleartext": true
+  },
+  "plugins": {
+    "CapacitorHttp": {
+      "enabled": true
+    }
+  }
+}

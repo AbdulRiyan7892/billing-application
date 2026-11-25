@@ -1,0 +1,28 @@
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
+import { VitePWA } from "vite-plugin-pwa";
+
+export default defineConfig({
+   base: "./",
+  plugins: [
+    react(),
+
+    VitePWA({
+      registerType: "autoUpdate",
+
+      manifest: {
+        name: "Arif Veneer and Woods Billing",
+        short_name: "Arif Billing",
+        description: "Offline invoice management",
+        theme_color: "#172b52",
+        background_color: "#ffffff",
+        display: "standalone",
+        start_url: "/"
+      },
+
+      workbox: {
+        globPatterns: ["**/*.{js,css,html,svg,png,ico}"]
+      }
+    })
+  ]
+});
